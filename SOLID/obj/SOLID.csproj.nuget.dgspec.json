@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Projetos\\SOLID\\SOLID\\SOLID.csproj": {}
+    "D:\\Projetos\\SOLID_.net_core\\SOLID\\SOLID.csproj": {}
   },
   "projects": {
-    "D:\\Projetos\\SOLID\\SOLID\\SOLID.csproj": {
+    "D:\\Projetos\\SOLID_.net_core\\SOLID\\SOLID.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Projetos\\SOLID\\SOLID\\SOLID.csproj",
+        "projectUniqueName": "D:\\Projetos\\SOLID_.net_core\\SOLID\\SOLID.csproj",
         "projectName": "SOLID",
-        "projectPath": "D:\\Projetos\\SOLID\\SOLID\\SOLID.csproj",
+        "projectPath": "D:\\Projetos\\SOLID_.net_core\\SOLID\\SOLID.csproj",
         "packagesPath": "C:\\Users\\YuriDuque\\.nuget\\packages\\",
-        "outputPath": "D:\\Projetos\\SOLID\\SOLID\\obj\\",
+        "outputPath": "D:\\Projetos\\SOLID_.net_core\\SOLID\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

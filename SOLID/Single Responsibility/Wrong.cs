@@ -16,5 +16,18 @@
 
     public class Order
     {
+        public void CalculateTotalSum() { }
+        public void GetItems() { }
+        public void GetItemCount() { }
+        public void AddItem() { }
+        public void DeleteItem() { }
+
+        public void PrintOrder() { }
+        public void ShowOrder() { }
+
+        public void Load() { }
+        public void Save() { }
+        public void Update() { }
+        public void Delete() { }
     }
 }
