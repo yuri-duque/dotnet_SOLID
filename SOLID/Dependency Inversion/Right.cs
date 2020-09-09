@@ -28,7 +28,13 @@
     // This principle aims at reducing the dependency of a high-level Class on the low-level Class
     // by introducing an interface.
 
-    public class Right
+    public class UsuarioRepository
     {
+        private string _connectionString;
+
+        public UsuarioRepository(string connectionString)
+        {
+            _connectionString = connectionString;
+        }
     }
 }

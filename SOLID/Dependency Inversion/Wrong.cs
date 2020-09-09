@@ -1,4 +1,6 @@
-﻿namespace SOLID.Dependency_Inversion
+﻿using System;
+
+namespace SOLID.Dependency_Inversion
 {
     // https://medium.com/backticks-tildes/the-s-o-l-i-d-principles-in-pictures-b34ce2f1e898
 
@@ -28,7 +30,13 @@
     // This principle aims at reducing the dependency of a high-level Class on the low-level Class
     // by introducing an interface.
 
-    public class Wrong
+    public class UsuarioRepository
     {
+        private string ConnectionString;
+
+        public UsuarioRepository()
+        {
+            ConnectionString = "teste";
+        }
     }
 }
