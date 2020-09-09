@@ -16,7 +16,25 @@
     // Goal
     // This principle aims at splitting a set of actions into smaller sets so that a Class executes ONLY the set of actions it requires.
 
-    public class Right
+    interface AvesQueVoam
     {
+        public void Voar();
+        public void Bicar();
+    }
+
+    interface AvesQueNaoVoam
+    {
+        public void Bicar();
+    }
+
+    public class PicaPau : AvesQueVoam
+    {
+        public void Voar() { } // PicaPau voa
+        public void Bicar() { } // PicaPau bica
+    }
+
+    public class Pinguim : AvesQueNaoVoam
+    {
+        public void Bicar() { } // PicaPau bica
     }
 }
