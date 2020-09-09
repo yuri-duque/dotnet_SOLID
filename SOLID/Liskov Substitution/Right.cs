@@ -29,7 +29,32 @@
     // This principle aims to enforce consistency so that the parent Class or its child Class can
     // be used in the same way without any errors.
 
-    public class Right
+    public class Pai
     {
+        public Pai(string nome)
+        {
+            this.Nome = nome;
+        }
+
+        public string Nome { get; set; }
+
+        public string GetNome()
+        {
+            return "Meu nome é " + Nome;
+        }
+    }
+
+    public class Filho : Pai
+    {
+        public Filho(string nome) : base(nome){}
+    }
+
+    public class PedirCafe
+    {
+        public PedirCafe()
+        {
+            var resultadoPai = new Pai("Joao").GetNome(); // Joao
+            var resultadoFilho = new Filho("Lucas").GetNome(); // Lucas
+        }
     }
 }

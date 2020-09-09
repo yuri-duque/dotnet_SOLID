@@ -1,4 +1,6 @@
-﻿namespace SOLID.Liskov_Substitution
+﻿using System.Runtime.InteropServices.ComTypes;
+
+namespace SOLID.Liskov_Substitution
 {
     // https://medium.com/backticks-tildes/the-s-o-l-i-d-principles-in-pictures-b34ce2f1e898
 
@@ -29,7 +31,42 @@
     // This principle aims to enforce consistency so that the parent Class or its child Class can
     // be used in the same way without any errors.
 
-    public class Wrong
+    public class Pai_errado
     {
+        public Pai_errado(string nome)
+        {
+            this.Nome = nome;
+        }
+
+        public string Nome { get; set; }
+
+        public string GetNome()
+        {
+            return "Meu nome é " + Nome;
+        }
+    }
+
+    public class Filho_errado : Pai_errado
+    {
+        public Filho_errado(string nome) : base (nome)
+        {
+            this.Nome = nome;
+        }
+
+        public string Nome { get; set; }
+
+        public string GetNome()
+        {
+            return "Meu nome é " + Nome;
+        }
+    }
+
+    public class PedirCafe_errado
+    {
+        public PedirCafe_errado()
+        {
+            var resultadoPai = new Pai_errado("Joao").GetNome(); // Joao
+            var resultadoFilho = new Filho_errado("Lucas").GetNome(); // Lucas
+        }
     }
 }
