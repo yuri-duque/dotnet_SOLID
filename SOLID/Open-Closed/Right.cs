@@ -16,7 +16,34 @@
     // existing behaviour of that Class. This is to avoid causing bugs wherever
     // the Class is being used.
 
-    public class Right
+    public interface IRemuneravel
     {
+        double Remuneracao();
+    }
+
+    public class ContratoCLT : IRemuneravel
+    {
+        public double Remuneracao()
+        {
+            return 4000;
+        }
+    }
+
+    public class Estagio : IRemuneravel
+    {
+        public double Remuneracao()
+        {
+            return 1000;
+        }
+    }
+
+    public class FolhaPagamento
+    {
+        protected double Saldo { get; set; }
+
+        public void Calcular(IRemuneravel contrato)
+        {
+            Saldo = contrato.Remuneracao();
+        }
     }
 }
